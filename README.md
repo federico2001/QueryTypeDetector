@@ -1,5 +1,5 @@
 # Fine Tuning Pre-Trained Bert Transformer MultiClassClassificatior for the <b>QueryTypeDetector</b>
-This jup-notebook prepares, trains and saves a transformer based model (fine tuning a pre-trained distilbert) that will <b>categorize the query</b> into one of the following types:<br>
+The notebook contained in this project prepares, trains and saves a transformer based model (fine tuning a pre-trained distilbert) that will <b>categorize the query</b> into one of the following types:<br>
 - 0) <b>Retailer</b>: Query is about a retailer (Target, Walmart, ...)
 - 1) <b>Brand</b>: Query is about a specific brand (Huggies, Gatorade, ..)
 - 2) <b>Category</b>: Query is about an open category (diapers, hand bags, phones, ...)
@@ -17,3 +17,6 @@ The purpose of this model is to direct a query request to the specific treatment
 **To run the jupyter lab file that trains the transformer with the exact same operating system, python version and required libraries in 'production' please run the jupyter lab through this Dockerfile:
 
 docker run -p 8080:8080 -v "$(pwd)":/app/notebooks my_jupyter_lab_image
+
+### Deployment
+The complete deployment project can be found in <a href="https://github.com/federico2001/QueryTypeDetector-Deployment">this repository</a>.
